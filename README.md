@@ -1,6 +1,6 @@
 # reactPokedexTs
 
-A pokedex created with react, typescript and [pokeapi](https://pokeapi.co/)
+A pokedex created with react, typescript, [pokeapi](https://pokeapi.co/) and [Material UI](https://material-ui.com/)
 
 ## Get images from
 
