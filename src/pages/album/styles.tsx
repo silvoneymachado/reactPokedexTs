@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
   },
   cardMedia: {
-    height: '20vh',
+    height: '30vh',
     paddingTop: '56.25%', // 16:9
   },
   cardContent: {
@@ -34,18 +34,40 @@ const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
     minWidth: 120,
+    flexGrow: 1,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    justifyItems: 'start',
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
+    width: '8vw',
   },
   root: {
     '& > * + *': {
       marginTop: theme.spacing(2),
     },
   },
+  paper: {
+    position: 'absolute',
+    width: '600',
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #000',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+  },
 }));
+
+export const getModalStyle = () => {
+  const top = 50;
+  const left = 50;
+
+  return {
+    top: `${top}%`,
+    left: `${left}%`,
+    transform: `translate(-${top}%, -${left}%)`,
+  };
+};
 
 export default useStyles;
